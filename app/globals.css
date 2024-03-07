@@ -4,9 +4,16 @@
 
 @layer base{
  body{
-  @apply bg-[#ecf0f3];
+  @apply bg-gradient-to-tr from-black via-gray-800 to-gray-900;
  }
  .navHover{
     @apply px-4 py-1 hover:bg-gray-500 rounded-lg;
  }
+}
+
+@layer utilities{
+   .custom-shape{
+       clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+   }
+   
 }
