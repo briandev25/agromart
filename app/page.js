@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState,useEffect } from 'react'
 import { GlobeAltIcon,ArrowRightIcon,Bars3Icon,XMarkIcon } from '@heroicons/react/24/outline'
 import { BanknotesIcon,LockClosedIcon,TrophyIcon,Squares2X2Icon } from '@heroicons/react/24/solid'
-
+import { FaGithub,FaFacebook,FaTwitter,FaLinkedin } from 'react-icons/fa'
 
 
 
@@ -15,6 +15,11 @@ export default function Home() {
 
   const [isMenuOpen,setIsMenuOpen] = useState(false);
   const [shadow,setShadow] =useState(false)
+  const footerLinks = [
+    {id:1,head:"Useful Links",links:['Content','How it works','Create','Explore','Terms and services']},
+    {id:2,head:"Community",links:['Help Center','Patners','Suggestions','Blog','Newsletters']},
+    {id:3,head:"Patner",links:['Our Patner','Become a patner','Accessibility','E-verify','Privacy Notice']}
+  ]
 
 const toggleMenu = () =>{
     setIsMenuOpen(!isMenuOpen);
@@ -233,6 +238,52 @@ useEffect(() =>{
             <div className=" h-full w-full  flex-1   ">
 
             </div>
+        </div>
+
+        {/* Footer */}
+        <div className=" bg-[#1D2123]  w-full h-[80vh]">
+          <div className=" pt-[10vh]  max-w-[1240px]  h-full mx-auto">
+              <div className="flex">
+              <div className="  w-1/2 ">
+                 <div className="flex items-center font-extrabold"> 
+                   <Image
+                    src='/est2.png'
+                    alt="hero section"
+                    width={100}
+                      height={100}
+                    />
+                    <p className=" text-3xl">AGROMART</p>
+                </div>
+                <p className="text-gray-400">Say goodbye to long lines and heavy bags – shop smarter with us today!</p>
+              </div>
+              <div className=" ml-10 w-1/2">
+                <div className=" grid grid-cols-3">
+                   {footerLinks.map( item =>(
+                      <div key={item.id} className=" flex flex-col">
+                          <h1 className=" text-white mb-5 cursor-pointer">{item.head}</h1>
+                          <ul>
+                           {item.links.map((tag,index) =>(
+                            <li className=" my-3 text-gray-600 hover:text-gray-400 cursor-pointer" key={index}>{tag}</li>
+                           ))}
+                          </ul>
+                          
+                      </div>
+                   ))}
+                </div>
+              </div>
+              </div>
+           <hr className=" mt-12"></hr> 
+           <div className="flex justify-between my-10">
+              <p className=" text-gray-400">Copyright ©️ 2024 briankips34 Inc. All Rights Reserved.</p>
+              <div className=" flex space-x-4">
+                 <FaGithub className=" text-white text-2xl cursor-pointer" />
+                 <FaFacebook className=" text-white text-2xl cursor-pointer"  />
+                 <FaTwitter className=" text-white text-2xl cursor-pointer"  />
+                 <FaGithub className=" text-white text-2xl cursor-pointer"  />
+              </div>
+            </div> 
+          </div>
+          
         </div>
      
     </main>
