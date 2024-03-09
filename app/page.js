@@ -7,6 +7,7 @@ import { useState,useEffect } from 'react'
 import { GlobeAltIcon,ArrowRightIcon,Bars3Icon,XMarkIcon } from '@heroicons/react/24/outline'
 import { BanknotesIcon,LockClosedIcon,TrophyIcon,Squares2X2Icon } from '@heroicons/react/24/solid'
 import { FaGithub,FaFacebook,FaTwitter,FaLinkedin } from 'react-icons/fa'
+import CountUp from 'react-countup';
 
 
 
@@ -65,7 +66,7 @@ useEffect(() =>{
      </div>
       {/* Others on left */}
       <div className=" flex items-center space-x-9 lg:space-x-5">
-        <GlobeAltIcon className=" hover:cursor-pointer h-6 w-6" />
+        <GlobeAltIcon className=" hover:cursor-pointer h-6 w-6 text-gray-200" />
          <div className=" hidden lg:flex  bg-[#d13639] hover:bg-red-500 rounded-full px-5 py-1 cursor-pointer">
             SIGN IN
          </div>
@@ -111,15 +112,15 @@ useEffect(() =>{
          <div className=" text-white absolute bg-gradient-to-r from-black to-transparent h-full w-full">
           <div className=" max-w-[1240px]  h-full flex flex-col justify-around  items-start m-auto md:text-center">
           
-          <div className=" w-1/2 mt-auto   " >
-          <h1 className=" text-3xl md:text-3xl mb-10 lg:mb-5 font-bold tracking-wide">
+          <div className="w-full md:w-1/2 md:mt-auto flex flex-col items-center justify-center   " >
+          <h1 className=" text-3xl md:text-3xl mb-10 lg:mb-5 font-bold tracking-wide text-center">
               Your Ultimate Online Grocery Destination
            </h1>
            <p className=" hidden lg:flex text-gray-300 text-lg tracking-wide mb-12">
             Welcome to agromart,your onestop destination for all your grocery needs,conviniently available at your fongertips.We prioritize freshness,quality and customer satisfaction above all else.
            </p>
            {/* Discover now Button */}
-           <div className="flex items-center cursor-pointer hover:shadow-lg hover:shadow-red-400 transition duration-200 bg-[#d13639] w-full md:w-1/2 m-auto px-2 py-2 rounded-2xl ">
+           <div className="flex items-center cursor-pointer hover:shadow-lg hover:shadow-red-400 transition duration-200 bg-[#d13639] w-[240px] md:w-1/2 m-auto px-2 py-2 rounded-2xl ">
                <ArrowRightIcon className=" h-8 w-8 lg:h-10 lg:w-10 p-2 bg-black rounded-full mr-4 "  />
                <div className=" text-white font-bold text-xl lg:text-3xl whitespace-nowrap">
                 Discover Now
@@ -127,30 +128,30 @@ useEffect(() =>{
            </div>
           
           </div>
-          <div className=" flex mb-6 justify-around text-white w-full  mt-[10vh]">
-            <div className="flex space-x-4 items-center">
-                 <p className=" text-5xl">3000+</p>
-                 <p className=" uppercase bg-repeating-gradient">users active</p>
+          <div className="  hidden md:flex  mb-6 justify-around text-white w-full  mt-[10vh]">
+            <div className="flex  space-x-4 items-center">
+                 <p className=" text-xl lg:text-5xl"><CountUp end={3000} duration={2.75} />+</p>
+                 <p className=" uppercase  bg-repeating-gradient whitespace-nowrap">users active</p>
             </div>
             <div className="flex space-x-4 items-center">
-                 <p className=" text-5xl">230+</p>
-                 <p className=" uppercase">trusted by company</p>
+                 <p className=" text-xl lg:text-5xl"><CountUp end={130} duration={2.75} />+</p>
+                 <p className=" uppercase  whitespace-nowrap">trusted by company</p>
             </div>
             <div className="flex space-x-4 items-center">
-                 <p className=" text-5xl">$230M</p>
-                 <p className=" uppercase">transactions</p>
+                 <p className=" text-xl lg:text-5xl">$<CountUp end={250} duration={2.75} />M</p>
+                 <p className=" uppercase   whitespace-nowrap">transactions</p>
             </div>
            </div>
           </div>
           
          </div>
     </div>
-      {/* Whats happening section */}
+      {/* Benefits section */}
         <div className=" w-full mb-7  ">
-               <div className=" max-w-[1240px] mt-[10vh] flex  h-full mx-auto">
+               <div className=" max-w-[1240px] mx-5  md:mx-[10vh] mt-[10vh] flex flex-col lg:flex-row  h-full xl:mx-auto">
                   <div className=" flex-1">
-                     <div className=" flex flex-col">
-                     <h1 className=" text-white text-4xl text-ellipsis ">Discover the top benefits of shopping with us</h1>
+                     <div className=" flex flex-col mb-[10vh] lg:mb-0 items-center lg:items-start">
+                     <h1 className=" text-white text-4xl text-ellipsis text-center lg:text-start ">Discover the top benefits of shopping with us</h1>
                      <div className=" text-xl w-[75%] text-gray-400 mt-10">Streamline your grocery shopping with agromart. From fresh produce to pantry staples, enjoy convenience, quality, and savings delivered to your doorstep. Shop now and experience the difference!</div>
                      <button className=" cursor-pointer bg-gradient-to-tr from-orange-600 to-orange-400 py-4 inline rounded-lg mt-[10vh] w-[170px]">Get Started</button>
                      </div>
@@ -218,7 +219,7 @@ useEffect(() =>{
         layout="fill"
         objectFit="cover"
          />
-            <div className="  h-full  flex-1 custom-shape bg-[#c9d1d9]   ">
+            <div className="  h-full  lg:flex-1 w-full normal-shape lg:custom-shape bg-[#c9d1d9]   ">
                  <div className=" mx-20 items-center  flex flex-col space-y-10 text-center mt-[10vh]">
                   <h1 className=" text-4xl text-[#1A1E1F] font-semibold text-ellipsis">We're hiring!</h1>
                   <p className=" text-xl text-gray-600">Team up with agrimart to forge your path and craft unforgetable experience in the field of agriculture</p>
@@ -240,12 +241,14 @@ useEffect(() =>{
             </div>
         </div>
 
+        
+
         {/* Footer */}
         <div className=" bg-[#1D2123]  w-full h-[80vh]">
           <div className=" pt-[10vh]  max-w-[1240px]  h-full mx-auto">
-              <div className="flex">
-              <div className="  w-1/2 ">
-                 <div className="flex items-center font-extrabold"> 
+              <div className="flex flex-col lg:flex-row items-center text-center mx-6 space-y-6">
+              <div className=" w-full flex flex-col items-center  lg:w-1/2 ">
+                 <div className="flex  items-center font-extrabold"> 
                    <Image
                     src='/est2.png'
                     alt="hero section"
@@ -256,7 +259,7 @@ useEffect(() =>{
                 </div>
                 <p className="text-gray-400">Say goodbye to long lines and heavy bags – shop smarter with us today!</p>
               </div>
-              <div className=" ml-10 w-1/2">
+              <div className=" ml-10 w-full lg:w-1/2">
                 <div className=" grid grid-cols-3">
                    {footerLinks.map( item =>(
                       <div key={item.id} className=" flex flex-col">
@@ -273,7 +276,7 @@ useEffect(() =>{
               </div>
               </div>
            <hr className=" mt-12"></hr> 
-           <div className="flex justify-between my-10">
+           <div className="flex lg:flex-row flex-col items-center space-y-5 lg:space-y-0 lg:mx-8 lg:justify-between my-10">
               <p className=" text-gray-400">Copyright ©️ 2024 briankips34 Inc. All Rights Reserved.</p>
               <div className=" flex space-x-4">
                  <FaGithub className=" text-white text-2xl cursor-pointer" />
