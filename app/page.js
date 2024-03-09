@@ -241,11 +241,22 @@ useEffect(() =>{
             </div>
         </div>
 
-        
+        {/* Get started Section */}
+        <div className="w-full overflow-x-hidden ">
+           <div className="py-[10vh]  max-w-[1240px]  h-full mx-auto">
+              <div className="  mx-5 bg-gradient-to-tr from-[#09203f] py-10 lg:py-0 flex flex-col space-y-5 lg:space-y-0 lg:flex-row justify-between  items-center lg:px-20 to-[#537895] lg:h-[40vh] rounded-3xl">
+                 <div className=" flex  flex-col items-center space-y-3 lg:items-start">
+                      <h1 className=" text-white text-4xl font-semibold">Let's try our service now!</h1>
+                      <p className=" text-gray-400 w-[80%] lg:w-[70%] ">Your ultimate destination for convenient and hassle-free online grocery shopping! At AgriMart, we offer a vast selection of fresh produce, pantry essentials, household items, and specialty goods, all delivered straight to your doorstep. </p>
+                 </div>
+                 <div className=" cursor-pointer bg-gradient-to-tr from-orange-600 whitespace-nowrap to-orange-400 w-[170px] py-3 px-8 inline rounded-lg text-center">Get Started</div>
+              </div>
+           </div>
+        </div>
 
         {/* Footer */}
-        <div className=" bg-[#1D2123]  w-full h-[80vh]">
-          <div className=" pt-[10vh]  max-w-[1240px]  h-full mx-auto">
+        <div className=" bg-[#1D2123]  w-full ">
+          <div className=" pt-[10vh]   max-w-[1240px]  h-full mx-auto">
               <div className="flex flex-col lg:flex-row items-center text-center mx-6 space-y-6">
               <div className=" w-full flex flex-col items-center  lg:w-1/2 ">
                  <div className="flex  items-center font-extrabold"> 
@@ -276,7 +287,7 @@ useEffect(() =>{
               </div>
               </div>
            <hr className=" mt-12"></hr> 
-           <div className="flex lg:flex-row flex-col items-center space-y-5 lg:space-y-0 lg:mx-8 lg:justify-between my-10">
+           <div className="flex lg:flex-row flex-col items-center space-y-5 lg:space-y-0 lg:mx-8 lg:justify-between py-10">
               <p className=" text-gray-400">Copyright ©️ 2024 briankips34 Inc. All Rights Reserved.</p>
               <div className=" flex space-x-4">
                  <FaGithub className=" text-white text-2xl cursor-pointer" />
