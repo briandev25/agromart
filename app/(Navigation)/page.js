@@ -146,6 +146,44 @@ useEffect(() =>{
           
          </div>
     </div>
+     {/* Whats new section */}
+     <div className=" w-full ">
+        <div className=" max-w-[1240px] mx-auto my-[10vh] flex flex-col space-y-10  h-full">
+          <h1 className=" text-4xl text-center text-gray-300 font-semibold">What's new? Our latest updates</h1>
+          {/* 1 */}
+          <div className="flex  items-center h-[50vh] mx-5">
+               <div className=" w-[60%]  h-full relative ">
+                  <Image src='/egg.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg " />
+               </div> 
+               <div className=" w-[40%]  mx-5 ">
+                  <h1 className=" text-2xl  font-bold mb-2 text-green-700">Get ready for Easter!</h1>
+                  <p className=" w-[90%] text-gray-400" >We are locking prices for 3 weeks on a selection of your favourite Easter Essentials throughout our stores. Prices are locked from Thursday, March 14th to Wednesday, April 3rd.</p>
+               </div>
+          </div>
+
+          {/* 2 */}
+          <div className=" flex flex-row-reverse items-center h-[50vh] mx-5">
+               <div className=" w-[60%] h-full relative ">
+                  <Image src='/output.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg" />
+               </div> 
+               <div className=" w-[40%]  mx-5 ">
+                  <h1 className=" text-2xl  font-bold mb-2 text-green-700">Celebrating Women's Day!</h1>
+                  <p className=" w-[90%] text-gray-400" >At agromart, we honor and celebrate the incredible women who make a difference every day.Together, let's celebrate the achievements, strength, and resilience of women everywhere!</p>
+               </div>
+          </div>
+
+          {/* 3 */}
+          <div className=" flex  items-center h-[50vh] mx-5">
+               <div className=" w-[60%] h-full relative ">
+                  <Image src='/mega.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg" />
+               </div> 
+               <div className=" w-[40%]  mx-5 ">
+                  <h1 className=" text-2xl  font-bold mb-2 text-green-700">Get 20% discount today!</h1>
+                  <p className=" w-[90%] text-gray-400" >As a token of our appreciation, we're offering a special discount: <strong>Get 15% off</strong> on all products!</p>
+               </div>
+          </div>
+        </div>
+     </div>
       {/* Benefits section */}
         <div className=" w-full mb-7  ">
                <div className=" max-w-[1240px] mx-5  md:mx-[10vh] mt-[10vh] flex flex-col lg:flex-row  h-full xl:mx-auto">
