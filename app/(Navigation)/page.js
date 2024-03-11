@@ -70,7 +70,7 @@ useEffect(() =>{
          <div className=" hidden lg:flex  bg-[#d13639] hover:bg-red-500 rounded-full px-5 py-1 cursor-pointer">
             SIGN IN
          </div>
-         <Bars3Icon onClick={() =>setIsMenuOpen(true)} className=" h-6 w-6 lg:hidden  cursor-pointer" />
+         <Bars3Icon onClick={() =>setIsMenuOpen(true)} className=" h-6 w-6 text-gray-500 lg:hidden  cursor-pointer" />
       </div>
       
      </div>
