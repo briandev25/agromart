@@ -149,7 +149,7 @@ useEffect(() =>{
      {/* Whats new section */}
      <div className=" w-full ">
         <div className=" max-w-[1240px] mx-auto my-[10vh] flex flex-col space-y-10  h-full">
-          <h1 className=" text-4xl text-center text-gray-300 font-semibold">What's new? Our latest updates</h1>
+          <h1 className=" text-4xl text-center text-gray-300 font-semibold">What&apos;s new? Our latest updates</h1>
           {/* 1 */}
           <div className="flex  items-center h-[50vh] mx-5">
                <div className=" w-[60%]  h-full relative ">
@@ -167,8 +167,8 @@ useEffect(() =>{
                   <Image src='/output.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg" />
                </div> 
                <div className=" w-[40%]  mx-5 ">
-                  <h1 className=" text-2xl  font-bold mb-2 text-green-700">Celebrating Women's Day!</h1>
-                  <p className=" w-[90%] text-gray-400" >At agromart, we honor and celebrate the incredible women who make a difference every day.Together, let's celebrate the achievements, strength, and resilience of women everywhere!</p>
+                  <h1 className=" text-2xl  font-bold mb-2 text-green-700">Celebrating Women&apos;s Day!</h1>
+                  <p className=" w-[90%] text-gray-400" >At agromart, we honor and celebrate the incredible women who make a difference every day.Together, let&apos;s celebrate the achievements, strength, and resilience of women everywhere!</p>
                </div>
           </div>
 
@@ -179,7 +179,7 @@ useEffect(() =>{
                </div> 
                <div className=" w-[40%]  mx-5 ">
                   <h1 className=" text-2xl  font-bold mb-2 text-green-700">Get 20% discount today!</h1>
-                  <p className=" w-[90%] text-gray-400" >As a token of our appreciation, we're offering a special discount: <strong>Get 15% off</strong> on all products!</p>
+                  <p className=" w-[90%] text-gray-400" >As a token of our appreciation, we&apos;re offering a special discount: <strong>Get 15% off</strong> on all products!</p>
                </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ useEffect(() =>{
                            {/* Title and Description */}
                            <div className=" flex flex-col space-y-2">
                                  <h1 className=" text-white text-xl">Wide selection</h1>
-                                 <p className=" text-gray-400">Explore our vast selection of groceries,from everyday staples to gourmet delights.Whatever you need,we've got you covered.</p>
+                                 <p className=" text-gray-400">Explore our vast selection of groceries,from everyday staples to gourmet delights.Whatever you need,we&apos;ve got you covered.</p>
                            </div>
                          </div>
                      </div>
@@ -259,7 +259,7 @@ useEffect(() =>{
          />
             <div className="  h-full  lg:flex-1 w-full normal-shape lg:custom-shape bg-[#c9d1d9]   ">
                  <div className=" mx-20 items-center  flex flex-col space-y-10 text-center mt-[10vh]">
-                  <h1 className=" text-4xl text-[#1A1E1F] font-semibold text-ellipsis">We're hiring!</h1>
+                  <h1 className=" text-4xl text-[#1A1E1F] font-semibold text-ellipsis">We&apos;re hiring!</h1>
                   <p className=" text-xl text-gray-600">Team up with agrimart to forge your path and craft unforgetable experience in the field of agriculture</p>
                   <div className=" flex space-x-6">
                       <div className="  flex flex-1 flex-col px-10 py-5 rounded-lg  bg-gray-400">
@@ -284,7 +284,7 @@ useEffect(() =>{
            <div className="py-[10vh]  max-w-[1240px]  h-full mx-auto">
               <div className="  mx-5 bg-gradient-to-tr from-[#09203f] py-10 lg:py-0 flex flex-col space-y-5 lg:space-y-0 lg:flex-row justify-between  items-center lg:px-20 to-[#537895] lg:h-[40vh] rounded-3xl">
                  <div className=" flex  flex-col items-center space-y-3 lg:items-start">
-                      <h1 className=" text-white text-4xl font-semibold">Let's try our service now!</h1>
+                      <h1 className=" text-white text-4xl font-semibold">Let&apos;s try our service now!</h1>
                       <p className=" text-gray-400 w-[80%] lg:w-[70%] ">Your ultimate destination for convenient and hassle-free online grocery shopping! At AgriMart, we offer a vast selection of fresh produce, pantry essentials, household items, and specialty goods, all delivered straight to your doorstep. </p>
                  </div>
                  <div className=" cursor-pointer bg-gradient-to-tr from-orange-600 whitespace-nowrap to-orange-400 w-[170px] py-3 px-8 inline rounded-lg text-center">Get Started</div>
