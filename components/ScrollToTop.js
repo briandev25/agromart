@@ -19,7 +19,7 @@ const ScrollToTopButton = () =>{
     },[])
 
     const scrollToTop = () =>{
-        isVisible && window,scrollTo({top:0,behavior:'auto'})
+        isVisible && window,scrollTo({top:0,behavior:'smooth'})
     }
 
     return(

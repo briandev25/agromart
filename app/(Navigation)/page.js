@@ -151,33 +151,33 @@ useEffect(() =>{
         <div className=" max-w-[1240px] mx-auto my-[10vh] flex flex-col space-y-10  h-full">
           <h1 className=" text-4xl text-center text-gray-300 font-semibold">What&apos;s new? Our latest updates</h1>
           {/* 1 */}
-          <div className="flex  items-center h-[50vh] mx-5">
-               <div className=" w-[60%]  h-full relative ">
+          <div className="flex flex-col space-y-5 sm:space-y-0 sm:flex-row  items-center h-[100vh] sm:h-[50vh] mx-5">
+               <div className=" w-full sm:w-[60%]  h-full relative ">
                   <Image src='/egg.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg " />
                </div> 
-               <div className=" w-[40%]  mx-5 ">
+               <div className=" w-full sm:w-[40%]  mx-5 ">
                   <h1 className=" text-2xl  font-bold mb-2 text-green-700">Get ready for Easter!</h1>
                   <p className=" w-[90%] text-gray-400" >We are locking prices for 3 weeks on a selection of your favourite Easter Essentials throughout our stores. Prices are locked from Thursday, March 14th to Wednesday, April 3rd.</p>
                </div>
           </div>
 
           {/* 2 */}
-          <div className=" flex flex-row-reverse items-center h-[50vh] mx-5">
-               <div className=" w-[60%] h-full relative ">
+          <div className=" flex flex-col space-y-5 sm:space-y-0 sm:flex-row-reverse items-center h-[100vh] sm:h-[50vh] mx-5">
+               <div className=" w-full sm:w-[60%] h-full relative ">
                   <Image src='/output.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg" />
                </div> 
-               <div className=" w-[40%]  mx-5 ">
+               <div className=" w-full sm:w-[40%]  mx-5 ">
                   <h1 className=" text-2xl  font-bold mb-2 text-green-700">Celebrating Women&apos;s Day!</h1>
                   <p className=" w-[90%] text-gray-400" >At agromart, we honor and celebrate the incredible women who make a difference every day.Together, let&apos;s celebrate the achievements, strength, and resilience of women everywhere!</p>
                </div>
           </div>
 
           {/* 3 */}
-          <div className=" flex  items-center h-[50vh] mx-5">
-               <div className=" w-[60%] h-full relative ">
+          <div className=" flex flex-col space-y-5 sm:space-y-0 sm:flex-row  items-center h-[100vh] sm:h-[50vh] mx-5">
+               <div className=" w-full sm:w-[60%] h-full relative ">
                   <Image src='/mega.jpg' alt="/discount.png" layout='fill' objectFit='cover' className=" rounded-lg" />
                </div> 
-               <div className=" w-[40%]  mx-5 ">
+               <div className=" w-full sm:w-[40%]  mx-5 ">
                   <h1 className=" text-2xl  font-bold mb-2 text-green-700">Get 20% discount today!</h1>
                   <p className=" w-[90%] text-gray-400" >As a token of our appreciation, we&apos;re offering a special discount: <strong>Get 15% off</strong> on all products!</p>
                </div>
@@ -250,15 +250,15 @@ useEffect(() =>{
         </div>
 
         {/* We are hiring */}
-        <div className="flex relative w-full h-[80vh] ">
+        <div className="flex relative w-full sm:h-[80vh] ">
         <Image
         src='/greens.jpg'
         alt="hero section"
         layout="fill"
         objectFit="cover"
          />
-            <div className="  h-full  lg:flex-1 w-full normal-shape lg:custom-shape bg-[#c9d1d9]   ">
-                 <div className=" mx-20 items-center  flex flex-col space-y-10 text-center mt-[10vh]">
+            <div className="  h-full  lg:flex-1 w-full normal-shape lg:custom-shape bg-[#c9d1d9] pb-[10vh] sm:pb-0   ">
+                 <div className=" mx-20 items-center  flex flex-col space-y-10 text-center  mt-[10vh]">
                   <h1 className=" text-4xl text-[#1A1E1F] font-semibold text-ellipsis">We&apos;re hiring!</h1>
                   <p className=" text-xl text-gray-600">Team up with agrimart to forge your path and craft unforgetable experience in the field of agriculture</p>
                   <div className=" flex space-x-6">
@@ -271,7 +271,7 @@ useEffect(() =>{
                         <p>Offices</p>
                       </div>
                   </div>
-                  <div className=" cursor-pointer bg-gradient-to-tr from-orange-600 to-orange-400 py-4 inline rounded-lg mt-[10vh] w-[170px]">Explore Careers</div>
+                  <div className=" cursor-pointer bg-gradient-to-tr from-orange-600 to-orange-400 py-4 inline rounded-lg mt-[10vh]  w-[170px]">Explore Careers</div>
                   </div> 
             </div>
             <div className=" h-full w-full  flex-1   ">
@@ -284,10 +284,10 @@ useEffect(() =>{
            <div className="py-[10vh]  max-w-[1240px]  h-full mx-auto">
               <div className="  mx-5 bg-gradient-to-tr from-[#09203f] py-10 lg:py-0 flex flex-col space-y-5 lg:space-y-0 lg:flex-row justify-between  items-center lg:px-20 to-[#537895] lg:h-[40vh] rounded-3xl">
                  <div className=" flex  flex-col items-center space-y-3 lg:items-start">
-                      <h1 className=" text-white text-4xl font-semibold">Let&apos;s try our service now!</h1>
-                      <p className=" text-gray-400 w-[80%] lg:w-[70%] ">Your ultimate destination for convenient and hassle-free online grocery shopping! At AgriMart, we offer a vast selection of fresh produce, pantry essentials, household items, and specialty goods, all delivered straight to your doorstep. </p>
+                      <h1 className=" text-white text-2xl sm:text-4xl text-center font-semibold">Let&apos;s try our service now!</h1>
+                      <p className=" text-gray-400  w-full sm:w-[80%] lg:w-[70%] ">Your ultimate destination for convenient and hassle-free online grocery shopping! At AgriMart, we offer a vast selection of fresh produce, pantry essentials, household items, and specialty goods, all delivered straight to your doorstep. </p>
                  </div>
-                 <div className=" cursor-pointer bg-gradient-to-tr from-orange-600 whitespace-nowrap to-orange-400 w-[170px] py-3 px-8 inline rounded-lg text-center">Get Started</div>
+                 <div className=" cursor-pointer bg-gradient-to-tr from-orange-600 whitespace-nowrap to-orange-400 w-[170px] py-3 px-8 inline rounded-lg text-center ">Get Started</div>
               </div>
            </div>
         </div>
@@ -309,7 +309,7 @@ useEffect(() =>{
                 <p className="text-gray-400">Say goodbye to long lines and heavy bags – shop smarter with us today!</p>
               </div>
               <div className=" ml-10 w-full lg:w-1/2">
-                <div className=" grid grid-cols-3">
+                <div className=" grid grid-cols-2 sm:grid-cols-3">
                    {footerLinks.map( item =>(
                       <div key={item.id} className=" flex flex-col">
                           <h1 className=" text-white mb-5 cursor-pointer">{item.head}</h1>
